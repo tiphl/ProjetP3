@@ -4,15 +4,7 @@
 - les éléments de design qui reviennent sur une partie des pages (la mise en forme d'un bloc, la mise en forme du texte et des illustrations dans le contexte de ce bloc...);
 - ce qui est spécifique à une page-type. */
 
-@import "css/base.css";
-@import "css/global.css";
-@import "css/content-generic.css";
-@import "css/content-specific.css";
-
-/*doute sur import HTML*/
-
-@import "html/mentionslegales.html";
-@import "html/chic.html";
-@import "html/delice.html";
-@import "html/lanote.html";
-@import "html/palette.html";
+@import "base.css";
+@import "global.css";
+@import "content-generic.css";
+@import "content-specific.css";
