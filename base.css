@@ -1,0 +1,22 @@
+/* les styles "de base", notamment pour le texte 
+(paragraphes, titres, listes, citations, liens, couleurs, etc.) */
+
+li {
+    list-style-type: none;
+}
+
+.container_list {
+    display: flex;
+    width: 50%;
+    text-align: left;
+}
+
+.container_list .menu {
+
+    width: 1500%;
+}
+
+.container_list .price {
+    width: 20%;
+}
+

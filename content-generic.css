@@ -1,0 +1,13 @@
+/* éléments de design qui reviennent sur une partie des pages 
+(la mise en forme d'un bloc, la mise en forme du texte et des illustrations dans le contexte de ce bloc...) */
+
+#container
+{
+
+    width: 1190px; 
+    height: 1684px;
+    margin: auto; 
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(211, 86, 86);
+}
