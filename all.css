@@ -8,3 +8,8 @@
 @import "global.css";
 @import "content-generic.css";
 @import "content-specific.css";
+
+h1
+{
+    background-color: mediumseagreen;
+}
