@@ -4,6 +4,19 @@
 
 @import "base.css";
 
+@font-face {
+    font-family: 'qikki_regregular';
+    src: url('font/Qarmic_sans_Abridged-webfont.eot');
+    src: url('font/Qarmic_sans_Abridged-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Qarmic_sans_Abridged-webfont.woff2') format('woff2'),
+         url('font/Qarmic_sans_Abridged-webfont.woff') format('woff'),
+         url('font/Qarmic_sans_Abridged-webfont.ttf') format('truetype'),
+         url('fontQarmic_sans_Abridged-webfont.svg#qikki_regregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 h1 {
     text-align: center;
@@ -13,11 +26,15 @@ h1 {
     background-color: mediumseagreen;
     margin-right: 500px;
     margin-left: 500px;
-
+    font-family: "qikki_regregular";
+    font-size: 2.5em;
 }
 
 h2 {
     text-align: center;
+    font-family: "qikki_regregular";
+    font-size: 2em;
+    
 }
 
 #index {
@@ -47,9 +64,9 @@ img {
     border: none;
     padding: 6px 0 6px 0;
     border-radius: 8px;
-    background: #d34836;
+    background: mediumseagreen;
     font: bold 13px Arial;
-    color: #fff;
+    color: orange;
     margin: 75px;
     margin-right: 500px;
     margin-left: 500px;
@@ -61,6 +78,10 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: mediumseagreen;
+
 
 
 }
@@ -71,6 +92,7 @@ footer {
     background-color: mediumseagreen;
     margin-right: 500px;
     margin-left: 500px;
+
 }
 
 #conteneur #mentions {
@@ -81,4 +103,7 @@ footer {
     width: 50%;
 }
 
-
+#mentions #contact
+{
+    color: orange;
+}
