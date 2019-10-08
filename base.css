@@ -1,11 +1,14 @@
-/* les styles "de base", notamment pour le texte 
-(paragraphes, titres, listes, citations, liens, couleurs, etc.) */
+/* CSS 4 menus */
 
 
+#notes {
+    box-shadow: none;
+}
 
-
-
-
+h3
+{
+    text-align: center;
+}
 
 li {
     list-style-type: none;
