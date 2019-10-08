@@ -1,28 +1,11 @@
 /* les styles "de base", notamment pour le texte 
 (paragraphes, titres, listes, citations, liens, couleurs, etc.) */
 
-h1
-{
-    text-align: center;
-}
 
-#conteneur
-{
-    display: flex;
-    width: 100%;
-    text-align: center;
-    background-color: mediumseagreen;
-}
 
-#conteneur #mentions
-{
-    width: 50%;
-}
 
-#conteneur #contact
-{
-    width: 50%;
-}
+
+
 
 li {
     list-style-type: none;
