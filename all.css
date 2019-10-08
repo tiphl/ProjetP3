@@ -9,7 +9,89 @@
 @import "content-generic.css";
 @import "content-specific.css";
 
-h1
-{
+h1 {
+    text-align: center;
+    border: none;
+    padding: 30px 30px 30px 30px;
+    color: orange;
     background-color: mediumseagreen;
+    margin-right: 500px;
+    margin-left: 500px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+#index {
+    display: flex;
+    justify-content: center;
+
+}
+
+#index .column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+figure {
+    box-shadow: 3px 3px 6px darkgrey;
+    margin: 30px;
+
+
+}
+
+img {
+    display: block;
+}
+
+#button {
+    border: none;
+    padding: 6px 0 6px 0;
+    border-radius: 8px;
+    background: #d34836;
+    font: bold 13px Arial;
+    color: #fff;
+    margin: 75px;
+    margin-right: 500px;
+    margin-left: 500px;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+
+}
+
+#conteneur {
+    display: flex;
+    text-align: center;
+    background-color: mediumseagreen;
+    margin-right: 500px;
+    margin-left: 500px;
+}
+
+#conteneur #mentions {
+    width: 50%;
+}
+
+#conteneur #contact {
+    width: 50%;
+}
+
+
+/* CSS 4 menus */
+#notes {
+    box-shadow: none;
+}
+
+h3
+{
+    text-align: center;
 }
