@@ -1,13 +1,9 @@
 /* bien identifier:
-- les styles "de base", notamment pour le texte (paragraphes, titres, listes, citations, liens, couleurs, etc.);
-- ce qui ressort du design global (conteneur global, en-tête, pied de page, navigation...);
-- les éléments de design qui reviennent sur une partie des pages (la mise en forme d'un bloc, la mise en forme du texte et des illustrations dans le contexte de ce bloc...);
-- ce qui est spécifique à une page-type. */
+-all.css: css page index + import 
+-base.css: css menus*/
 
 @import "base.css";
-@import "global.css";
-@import "content-generic.css";
-@import "content-specific.css";
+
 
 h1 {
     text-align: center;
@@ -86,12 +82,3 @@ footer {
 }
 
 
-/* CSS 4 menus */
-#notes {
-    box-shadow: none;
-}
-
-h3
-{
-    text-align: center;
-}
