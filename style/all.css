@@ -2,7 +2,7 @@
 -all.css: css page index + import 
 -base.css: css menus*/
 
-@import "base.css";
+@import "style/base.css";
 
 @font-face {
     font-family: 'qikki_regregular';
@@ -108,7 +108,3 @@ footer {
     width: 50%;
 }
 
-#mentions #contact
-{
-    color: orange;
-}
