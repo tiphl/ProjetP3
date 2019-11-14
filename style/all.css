@@ -1,9 +1,3 @@
-/* bien identifier:
--all.css: css page index + import 
--base.css: css menus*/
-
-@import "style/base.css";
-
 @font-face {
     font-family: 'qikki_regregular';
     src: url('font/Qarmic_sans_Abridged-webfont.eot');
@@ -17,94 +11,285 @@
 
 }
 
-body
-{
-    margin: 0;
+/* Animations */
 
+@keyframes blink {
+  /**
+   * Au début de l'animation le point
+   * a une opacité de .2
+   */
+  0% {
+    opacity: .2;
+  }
+  /**
+   * A 20% le point est entièrement visible et
+   * puis disparaît lentement
+   */
+  20% {
+    opacity: 1;
+  }
+  /**
+   * Jusqu'à ce qu'il atteigne une opacité de .2 et
+   * l'animation peut recommencer
+   */
+  100% {
+    opacity: .2;
+  }
 }
 
-h1{
-    margin-top: 0;
-    background-color: mediumseagreen; 
-    width:100%;   
-     color:white;
-    padding:1em 0;
-    text-align:center;
-    overflow:hidden;
-    font-size:26px;
-    font-family:"qikki_regregular";
+  
+/***** Wiggle *****/
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
+}
+.mot:hover{ 
+  animation: wiggle 150ms infinite;
+  animation-timing-function: linear;   
+}
+
+/* Opacité */
+figure {
+	opacity: 1.3;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+figure:hover {
+	opacity: .5;
+}
+
+/* Dézoomer */
+figure {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s linear;
+	transition: .3s linear;
+}
+figure:hover {
+	-webkit-transform: scale(.95);
+	transform: scale(.95);
+}
+
+/*animation 3pts */
+h2 span {
+  animation-name: blink;
+  /* L'animation devrait prendre 1,4 seconde*/
+  animation-duration: 1.4s;
+  /* Se répète à l'infini*/
+  animation-iteration-count: infinite;
+  /* Cela garantit que le style de départ (opacité: .2)
+   * de l'animation est appliqué avant le début de l'animation.*/
+  animation-fill-mode: both;
+}
+
+h2 span:nth-child(2) {
+  /* Commence l'animation du 2me point avec un délais de .2s*/
+  animation-delay: .2s;
+}
+
+h2 span:nth-child(3) {
+  /* Commence l'animation du 3me point avec un délais de .4s*/
+  animation-delay: .4s;
+}
+
+/* Surlignement h3*/
+h3 {
+  position: relative;
+}
+h3::after {
+  content: '';
+  transform-origin: 0 0; 
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: .1em; 
+  background: black;
+  z-index: -1;
+  opacity: 0.8;
+  transition: transform .3s;
+}
+h3:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/* Général */
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "qikki_regregular", sans-serif;
+    font-size: 20px;
+
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fdcb46;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+ 
+  /* HEADER */
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #579c87;
+  }
+ 
+  #logo h1 {
+    display: none;
+  }
+
+  
+
+  /* MENUS */
+
+  figure {
+    margin: 20px 30px;
+  }
+  figure img {
+    box-shadow: 0px 0px 10px #b7b7b7;
   }
 
 
+  /* PROCHAINEMENT */
 
-h2 {
-    
-    text-align: center;
-    font-family: "qikki_regregular";
-    font-size: 2em;
-    
-}
-
-#index {
+  #prochainement {
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    padding: 0;
+    background-color: #579c87;
+    border-radius: 10px;
+  }
+  #prochainement h2 {
+    padding: 0 3px;
+    color: #fdcb46;
+    overflow: hidden;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: normal;
+  }
 
-}
+  /* FOOTER */
 
-#index .column {
-    display: flex;
-    flex-direction: column;
-
-}
-
-figure {
-    box-shadow: 3px 3px 6px darkgrey;
-    margin: 30px;
-}
-
-img {
-    display: block;
-}
-
-#button {
-    border: none;
-    padding: 6px 0 6px 0;
-    border-radius: 8px;
-    background: mediumseagreen;
-    font-family: "qikki_regregular";
-    color: white;
-    margin: 75px;
-    margin-right: 750px;
-    margin-left: 750px;
-
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  footer {
     width: 100%;
-    background-color: mediumseagreen;
-
-
-
-}
-
-#conteneur {
-    display: flex;
+    background-color: #579c87;
+    line-height: 45px;
     text-align: center;
-    background-color: mediumseagreen;
-    margin-right: 500px;
-    margin-left: 500px;
+  }
+  
+  footer:hover {
+    -webkit-animation: shake 1s infinite;
+    animation: shake 1s infinite;
+  }
 
-}
+  /* MEDIA QUERIES */
 
-#conteneur #mentions {
-    width: 50%;
-}
+  /*		format tablette		*/
+  @media screen and (min-width: 768px) {
+    /*global*/
+    body {
+      padding-bottom: 100px;
+      font-size: 24px;
+    }
+  
+    /*header*/
+    header {
+      height: 150px;
+    }
+    header p {
+      top: 130px;
+    }
+  
+    #logo {
+      width: 80%;
+    }
+  
+    /*menus*/
+    figure {
+      margin: 30px 30px;
+    }
+  
+    /*prochainement*/
+    #prochainement {
+      height: 60px;
+    }
+  
+    /*footer*/
+    footer {
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      bottom: 0;
+      width: 98%;
+      padding: 10px;
+    }
+  }
+  /*		Format desktop		*/
+  @media screen and (min-width: 1080px) {
+    /*global*/
+    body {
+      font-size: 18px;
+    }
+  
+    /*header*/
+    header {
+      text-align: center;
+    }
+  
+    #logo img {
+      width: auto;
+    }
+  
+    /*menus*/
+    #container_menus {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 75%;
+      margin: auto;
+    }
+    #container_menus figure {
+      width: 42%;
+    }
+  
+    /*Page menu*/
+    #menus {
+      width: 50%;
+      margin: auto;
+      padding: 30px 0 30px 0;
+    }
+    #menus h1 {
+      font-size: 26px;
+    }
+  
+    /*prochainement*/
+    #prochainement {
+      width: 30%;
+      margin-top: 30px;
+    }
 
-#conteneur #contact {
-    width: 50%;
-}
-
+  
+    /*footer*/
+    footer {
+      width: 99%;
+    }
+  }

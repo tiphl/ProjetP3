@@ -1,15 +1,35 @@
 /* CSS 4 menus */
 
 
+body#note {
 
+    background-color: #ffcccc;
+}
+
+body#chic {
+    background-color: #fff5fe;
+}
+
+body#delice {
+    background-color: #edefef;
+}
+
+body#palette {
+    background-color: #fdfffd;
+}
 
 p
 {
     text-align: center;
+    color: black;
+    
 }
 
-h3
-{
+h2 {
+    text-align: center;
+}
+
+h3 {
     text-align: center;
 }
 
@@ -35,5 +55,5 @@ li {
 .container_list .price {
     width: 20%;
     text-align: right;
-
+}
 
