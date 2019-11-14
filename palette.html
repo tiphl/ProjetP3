@@ -7,131 +7,124 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style/all.css">
+    <link rel="stylesheet" type="text/css" href="style/base.css">
     <meta name="description" content="projet3"> <!-- à modifier par la suite-->
     <title>La palette du goût</title>
 </head>
 
-<body>
+<body id="palette">
+    <!--Header-->
     <header>
-        <!--H1-->
-        <h1>ohmyfood</h1>
+        <div id="logo">
+            <h1>OhMyFood</h1>
+            <a href="index.html">
+                <img src="img/Logo-ohmyfood.png" alt="logo" />
+            </a>
+        </div>
     </header>
     <main>
-        <div id="container">
-            <div id="container_palette">
-                <!--ATTENTION ne pas utiliser de Framework pour ce projet-->
-
-                <h2 class="menu">La palette du goût</h2>
-
-
-                <section id="entree_palette">
-                    <h3>Esquisse</h3>
-                    <!--liste sans puce-->
-                    <ul>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Fricassée d'escargot au piment d'espelette
-                                </span>
-                                <span class="price">60€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Oeuf au plat assaisonné à la truffe sur lit de caviar
-                                </span>
-                                <span class="price">55€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Foie gras de canard mi-cuit et ses copeaux de truffe noire
-                                </span>
-                                <span class="price">65€
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-                </section>
-                <section id="plat_palette">
-                    <h3>Oeuvre de maître</h3>
-                    <!--liste sans puce-->
-                    <ul>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Filet de boeuf aux herbes accompagné de sa ribambelle de légumes
-                                </span>
-                                <span class="price">70€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Parmentier de queue de boeuf à la truffe noire sur sa purée de panais
-                                </span>
-                                <span class="price">85€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Filet de Turbot aux agrumes
-                                </span>
-                                <span class="price">125€
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-                </section>
-                <section id="dessert_palette">
-                    <h3>Au sommet de l'art</h3>
-                    <!--liste sans puce-->
-                    <ul>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Paris-Brest revisité
-                                </span>
-                                <span class="price">55€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Macaron au chocolat d'exception et glace à la vanille de Madagascar
-                                </span>
-                                <span class="price">65€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Mousse au chocolat au piment d'espelette et à la truffe noire
-                                </span>
-                                <span class="price">60€
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+        <div id="container_palette">
+            <!--ATTENTION ne pas utiliser de Framework pour ce projet-->
+            <h2 class="menu">La palette du goût</h2>
+            <section id="entree_palette">
+                <h3>Esquisse</h3>
+                <!--liste sans puce-->
+                <ul>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Fricassée d'escargot au piment d'espelette
+                            </span>
+                            <span class="price">60€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Oeuf au plat assaisonné à la truffe sur lit de caviar
+                            </span>
+                            <span class="price">55€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Foie gras de canard mi-cuit et ses copeaux de truffe noire
+                            </span>
+                            <span class="price">65€
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="plat_palette">
+                <h3>Oeuvre de maître</h3>
+                <!--liste sans puce-->
+                <ul>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Filet de boeuf aux herbes accompagné de sa ribambelle de légumes
+                            </span>
+                            <span class="price">70€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Parmentier de queue de boeuf à la truffe noire sur sa purée de panais
+                            </span>
+                            <span class="price">85€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Filet de Turbot aux agrumes
+                            </span>
+                            <span class="price">125€
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="dessert_palette">
+                <h3>Au sommet de l'art</h3>
+                <!--liste sans puce-->
+                <ul>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Paris-Brest revisité
+                            </span>
+                            <span class="price">55€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Macaron au chocolat d'exception et glace à la vanille de Madagascar
+                            </span>
+                            <span class="price">65€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Mousse au chocolat au piment d'espelette et à la truffe noire
+                            </span>
+                            <span class="price">60€
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </section>
         </div>
     </main>
-    
-    <div id="retour">
-        <p><a href="index.html">Retour</a></p>
-    </div>
+
     <footer>
-        <div id="conteneur">
-            <span id="mentions">
-                <a href="mentionslegales.html">Mentions Légales</a>
-                <!--Ouvre sur une page avec mentions légales trouvées sur le net-->
-            </span>
-            <span id="contact">
-                <a href="mailto:tiphainelallier@hotmail.fr">Contactez-nous</a>
-                <!--mailto-->
-            </span>
-        </div>
+        <!--Ouvre sur une page avec mentions légales trouvées sur le net-->
+        <a href="mentionslegales.html" class="mot">Mentions Légales</a>
+
+        <!--mailto-->
+        <a href="mailto:contact@ohmyfood.fr" class="mot">Contactez-nous</a>
     </footer>
 </body>
 

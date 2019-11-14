@@ -7,130 +7,124 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style/all.css">
+    <link rel="stylesheet" type="text/css" href="style/base.css">
     <meta name="description" content="projet3"> <!-- à modifier par la suite-->
     <title>Le délice des papilles</title>
 </head>
 
-<body>
+<body id="delice">
+    <!--Header-->
     <header>
-        <!--H1-->
-        <h1>ohmyfood</h1>
+        <div id="logo">
+            <h1>OhMyFood</h1>
+            <a href="index.html">
+                <img src="img/Logo-ohmyfood.png" alt="logo" />
+            </a>
+        </div>
     </header>
-    <div id="container">
+    <main>
         <div id="container_delice">
             <!--ATTENTION ne pas utiliser de Framework pour ce projet-->
-            <header>
-                <h2 class="menu">Le délice des papilles</h2>
-            </header>
-            <main>
-                <section id="entree_delice">
-                    <h3>Pour bien commencer</h3>
-                    <!--liste sans puce-->
-                    <ul>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu"> Tartare de thon assaisonné au yuzu
-                                </span>
-                                <span class="price">55€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu"> Bouchée de homard croustillant et sa farandole de petits légumes
-                                </span>
-                                <span class="price">89€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu"> Velouté de cèpes aux truffes
-                                </span>
-                                <span class="price"> 56€
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-                </section>
-                <section id="plat_delice">
-                    <h3>Pour bien continuer</h3>
-                    <!--liste sans puce-->
-                    <ul>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Poulet rôti aux herbes de provence et sa crème de truffe
-                                </span>
-                                <span class="price">110€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Langouste rôtie et ses légumes de saison
-                                </span>
-                                <span class="price">225€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu"> Côte de boeuf angus et sa purée de panais
-                                </span>
-                                <span class="price">115€
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-                </section>
-                <section id="dessert_delice">
-                    <h3>Pour bien terminer</h3>
-                    <!--liste sans puce-->
-                    <ul>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Farandole de desserts du chef
-                                </span>
-                                <span class="price">55€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu"> Crème brûlée revisitée
-                                </span>
-                                <span class="price">60€
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="container_list">
-                                <span class="menu">Tiramisu à la noisette
-                                </span>
-                                <span class="price">55€
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-                </section>
-            </main>
+            <h2 class="menu">Le délice des papilles</h2>
+            <section id="entree_delice">
+                <h3>Pour bien commencer</h3>
+                <!--liste sans puce-->
+                <ul>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu"> Tartare de thon assaisonné au yuzu
+                            </span>
+                            <span class="price">55€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu"> Bouchée de homard croustillant et sa farandole de petits légumes
+                            </span>
+                            <span class="price">89€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu"> Velouté de cèpes aux truffes
+                            </span>
+                            <span class="price"> 56€
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="plat_delice">
+                <h3>Pour bien continuer</h3>
+                <!--liste sans puce-->
+                <ul>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Poulet rôti aux herbes de provence et sa crème de truffe
+                            </span>
+                            <span class="price">110€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Langouste rôtie et ses légumes de saison
+                            </span>
+                            <span class="price">225€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu"> Côte de boeuf angus et sa purée de panais
+                            </span>
+                            <span class="price">115€
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="dessert_delice">
+                <h3>Pour bien terminer</h3>
+                <!--liste sans puce-->
+                <ul>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Farandole de desserts du chef
+                            </span>
+                            <span class="price">55€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu"> Crème brûlée revisitée
+                            </span>
+                            <span class="price">60€
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="container_list">
+                            <span class="menu">Tiramisu à la noisette
+                            </span>
+                            <span class="price">55€
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
 
-        </div>
-    </div>
-    <div id="retour">
-        <p><a href="index.html">Retour</a></p>
-</div>
     <footer>
-        <div id="conteneur">
-            <span id="mentions">
-                <a href="mentionslegales.html">Mentions Légales</a>
-                <!--Ouvre sur une page avec mentions légales trouvées sur le net-->
-            </span>
-            <span id="contact">
-                <a href="mailto:tiphainelallier@hotmail.fr">Contactez-nous</a>
-                <!--mailto-->
-            </span>
-        </div>
+        <!--Ouvre sur une page avec mentions légales trouvées sur le net-->
+        <a href="mentionslegales.html" class="mot">Mentions Légales</a>
+
+        <!--mailto-->
+        <a href="mailto:contact@ohmyfood.fr" class="mot">Contactez-nous</a>
     </footer>
 </body>
 
