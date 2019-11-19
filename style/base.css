@@ -1,9 +1,9 @@
-/* CSS 4 menus */
+/* CSS 4 menus + ML */
 
 
 body#note {
 
-    background-color: #ffcccc;
+    background-color: #fcdfdb;
 }
 
 body#chic {
@@ -21,35 +21,50 @@ body#palette {
 p
 {
     text-align: center;
-    color: black;
-    
+    color: black;    
 }
+
+main p {
+    text-align: left;
+    margin-left: 20px;
+}
+h1#cgv {
+    text-align: center;
+}
+
 
 h2 {
     text-align: center;
 }
 
 h3 {
-    text-align: center;
-}
+
+ text-align: center;
+    }
+
 
 li {
     list-style-type: none;
 
 
 }
+/*barres*/
+img {
+    width: 300px;
+}
+
 
 .container_list {
     display: flex;
-    width: 72%;
+    width: 67%;
 
 }
 
 .container_list .menu {
 
-    width: 100%;
+    width: 80%;
     text-align: left;
-    padding-left: 35%;
+    padding-left: 40%;
 }
 
 .container_list .price {
