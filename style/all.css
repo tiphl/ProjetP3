@@ -12,7 +12,7 @@
 }
 
 /* Animations */
-
+/*animation 3pts */
 @keyframes blink {
   /**
    * Au début de l'animation le point
@@ -21,6 +21,7 @@
   0% {
     opacity: .2;
   }
+
   /**
    * A 20% le point est entièrement visible et
    * puis disparaît lentement
@@ -37,41 +38,6 @@
   }
 }
 
-  
-/***** Wiggle *****/
-@keyframes wiggle {
-  0% { transform: translate(2px, 0); }
-  50% { transform: translate(-2px, 0); }
-  100% { transform: translate(2px, 0); }
-}
-.mot:hover{ 
-  animation: wiggle 150ms infinite;
-  animation-timing-function: linear;   
-}
-
-/* Opacité */
-figure {
-	opacity: 1.3;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-figure:hover {
-	opacity: .5;
-}
-
-/* Dézoomer */
-figure {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s linear;
-	transition: .3s linear;
-}
-figure:hover {
-	-webkit-transform: scale(.95);
-	transform: scale(.95);
-}
-
-/*animation 3pts */
 h2 span {
   animation-name: blink;
   /* L'animation devrait prendre 1,4 seconde*/
@@ -92,11 +58,48 @@ h2 span:nth-child(3) {
   /* Commence l'animation du 3me point avec un délais de .4s*/
   animation-delay: .4s;
 }
+  
+/* Wiggle*/
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
+}
+.mot:hover{ 
+  -webkit-animation: wiggle 150ms infinite;
+  animation: wiggle 150ms infinite;
+  animation-timing-function: linear;   
+}
+
+
+/* Opacité */
+figure.index {
+	opacity: 1.3;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+figure.index:hover {
+	opacity: .5;
+}
+
+/* Dézoomer */
+figure.index {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s linear;
+	transition: .3s linear;
+}
+figure.index:hover {
+	-webkit-transform: scale(.95);
+	transform: scale(.95);
+}
+
 
 /* Surlignement h3*/
 h3 {
   position: relative;
 }
+
 h3::after {
   content: '';
   transform-origin: 0 0; 
@@ -111,6 +114,7 @@ h3::after {
   opacity: 0.8;
   transition: transform .3s;
 }
+
 h3:hover::after {
   transform: scaleX(1);
 }
@@ -157,10 +161,10 @@ body {
 
   /* MENUS */
 
-  figure {
+  figure.index {
     margin: 20px 30px;
   }
-  figure img {
+  figure.index img {
     box-shadow: 0px 0px 10px #b7b7b7;
   }
 
@@ -178,12 +182,13 @@ body {
     background-color: #579c87;
     border-radius: 10px;
   }
+
   #prochainement h2 {
     padding: 0 3px;
     color: #fdcb46;
     overflow: hidden;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: normal;
   }
 
@@ -196,10 +201,7 @@ body {
     text-align: center;
   }
   
-  footer:hover {
-    -webkit-animation: shake 1s infinite;
-    animation: shake 1s infinite;
-  }
+
 
   /* MEDIA QUERIES */
 
