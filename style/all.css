@@ -1,19 +1,51 @@
-@font-face {
-    font-family: 'qikki_regregular';
-    src: url('font/Qarmic_sans_Abridged-webfont.eot');
-    src: url('font/Qarmic_sans_Abridged-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/Qarmic_sans_Abridged-webfont.woff2') format('woff2'),
-         url('font/Qarmic_sans_Abridged-webfont.woff') format('woff'),
-         url('font/Qarmic_sans_Abridged-webfont.ttf') format('truetype'),
-         url('fontQarmic_sans_Abridged-webfont.svg#qikki_regregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+/*Fonts*/
 
+@font-face {
+  font-family: 'qikki_regregular';
+  src: url('font/Qarmic_sans_Abridged-webfont.eot');
+  src: url('font/Qarmic_sans_Abridged-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/Qarmic_sans_Abridged-webfont.woff2') format('woff2'),
+    url('font/Qarmic_sans_Abridged-webfont.woff') format('woff'),
+    url('font/Qarmic_sans_Abridged-webfont.ttf') format('truetype'),
+    url('fontQarmic_sans_Abridged-webfont.svg#qikki_regregular') format('svg');
 }
+
+@font-face {
+  font-family: "Segoe_Print";
+  src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot");
+  src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot?#iefix") format("embedded-opentype"), 
+  url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"), 
+  url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"), 
+  url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype"), 
+  url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.svg#Segoe Print") format("svg");
+}
+
+@font-face {
+  font-family: 'Croissant_one';
+  src: url('font/CroissantOne-regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Dancing_script';
+  src: url("font/DancingScript-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'kaushan_script';
+src: url("font/KaushanScript-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'noto_serif';
+  src: url("font/NotoSerif-Regular.ttf") format("truetype");
+}
+
+
 
 /* Animations */
 /*animation 3pts */
 @keyframes blink {
+
   /**
    * Au début de l'animation le point
    * a une opacité de .2
@@ -29,6 +61,7 @@
   20% {
     opacity: 1;
   }
+
   /**
    * Jusqu'à ce qu'il atteigne une opacité de .2 et
    * l'animation peut recommencer
@@ -58,240 +91,247 @@ h2 span:nth-child(3) {
   /* Commence l'animation du 3me point avec un délais de .4s*/
   animation-delay: .4s;
 }
-  
+
 /* Wiggle*/
 @keyframes wiggle {
-  0% { transform: translate(2px, 0); }
-  50% { transform: translate(-2px, 0); }
-  100% { transform: translate(2px, 0); }
+  0% {
+    transform: translate(2px, 0);
+  }
+
+  50% {
+    transform: translate(-2px, 0);
+  }
+
+  100% {
+    transform: translate(2px, 0);
+  }
 }
-.mot:hover{ 
+
+.mot:hover {
   -webkit-animation: wiggle 150ms infinite;
   animation: wiggle 150ms infinite;
-  animation-timing-function: linear;   
+  animation-timing-function: linear;
 }
 
 
 /* Opacité */
 figure.index {
-	opacity: 1.3;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-figure.index:hover {
-	opacity: .5;
+  opacity: 1.3;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
-/* Dézoomer */
+figure.index:hover {
+  opacity: .5;
+}
+
+/* Zoom sans faire grossir le cadre: zoom arrière */
 figure.index {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s linear;
-	transition: .3s linear;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
+
 figure.index:hover {
-	-webkit-transform: scale(.95);
-	transform: scale(.95);
+  -webkit-transform: scale(.95);
+  transform: scale(.95);
 }
 
 
-/* Surlignement h3*/
-h3 {
-  position: relative;
+/* Soulignement h3*/
+.souligner {
+  text-decoration: none;
+  background: linear-gradient(to top, #579c87 0%, #579c87 10%, transparent 10.01%) no-repeat left bottom / 0% 100%;
+  transition: background-size .5s;
 }
 
-h3::after {
-  content: '';
-  transform-origin: 0 0; 
-  transform: scaleX(0);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: .1em; 
-  background: black;
-  z-index: -1;
-  opacity: 0.8;
-  transition: transform .3s;
-}
+.souligner:hover {
+  background-size: 100% 100%;
 
-h3:hover::after {
-  transform: scaleX(1);
 }
-
 
 
 /* Général */
 
 body {
-    width: 100%;
-    margin: 0;
-    font-family: "qikki_regregular", sans-serif;
-    font-size: 20px;
+  width: 100%;
+  margin: 0;
+  font-family: "qikki_regregular", sans-serif;
+  font-size: 20px;
 
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fdcb46;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-  }
-  
- 
-  /* HEADER */
+}
 
+.mot {
+  text-decoration: none;
+  color: #fdcb46;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #579c87;
+}
+
+#logo h1 {
+  display: none;
+}
+
+
+/* MENUS */
+
+figure.index {
+  margin: 20px 30px;
+}
+
+figure.index img {
+  box-shadow: 0px 0px 10px #b7b7b7;
+}
+
+
+/* PROCHAINEMENT */
+
+#prochainement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  padding: 0;
+  background-color: #579c87;
+  border-radius: 10px;
+}
+
+#prochainement h2 {
+  padding: 0 3px;
+  color: #fdcb46;
+  overflow: hidden;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: #579c87;
+  line-height: 45px;
+  text-align: center;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+/*		format tablette		*/
+@media screen and (min-width: 768px) {
+
+  /*général*/
+  body {
+    padding-bottom: 100px;
+    font-size: 24px;
+  }
+
+  /*header*/
   header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    background-color: #579c87;
-  }
- 
-  #logo h1 {
-    display: none;
+    height: 150px;
   }
 
+  header p {
+    top: 130px;
+  }
+
+  #logo {
+    width: 80%;
   
-
-  /* MENUS */
-
-  figure.index {
-    margin: 20px 30px;
-  }
-  figure.index img {
-    box-shadow: 0px 0px 10px #b7b7b7;
   }
 
+  /*menus*/
+  figure {
+    margin: 30px 30px;
+  }
 
-  /* PROCHAINEMENT */
-
+  /*prochainement*/
   #prochainement {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 50px;
-    margin: auto;
-    padding: 0;
-    background-color: #579c87;
-    border-radius: 10px;
+    height: 60px;
   }
 
-  #prochainement h2 {
-    padding: 0 3px;
-    color: #fdcb46;
-    overflow: hidden;
-    letter-spacing: 2px;
-    font-size: 25px;
-    font-weight: normal;
-  }
-
-  /* FOOTER */
-
+  /*footer*/
   footer {
-    width: 100%;
-    background-color: #579c87;
-    line-height: 45px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+    padding: 10px;
+  }
+}
+
+/*		Format desktop		*/
+@media screen and (min-width: 1080px) {
+
+  /*général*/
+  body {
+    font-size: 18px;
+  }
+
+  /*header*/
+  header {
     text-align: center;
   }
-  
 
-
-  /* MEDIA QUERIES */
-
-  /*		format tablette		*/
-  @media screen and (min-width: 768px) {
-    /*global*/
-    body {
-      padding-bottom: 100px;
-      font-size: 24px;
-    }
-  
-    /*header*/
-    header {
-      height: 150px;
-    }
-    header p {
-      top: 130px;
-    }
-  
-    #logo {
-      width: 80%;
-    }
-  
-    /*menus*/
-    figure {
-      margin: 30px 30px;
-    }
-  
-    /*prochainement*/
-    #prochainement {
-      height: 60px;
-    }
-  
-    /*footer*/
-    footer {
-      display: flex;
-      justify-content: space-between;
-      position: fixed;
-      bottom: 0;
-      width: 98%;
-      padding: 10px;
-    }
+  #logo img {
+    width: auto;
   }
-  /*		Format desktop		*/
-  @media screen and (min-width: 1080px) {
-    /*global*/
-    body {
-      font-size: 18px;
-    }
-  
-    /*header*/
-    header {
-      text-align: center;
-    }
-  
-    #logo img {
-      width: auto;
-    }
-  
-    /*menus*/
-    #container_menus {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      width: 75%;
-      margin: auto;
-    }
-    #container_menus figure {
-      width: 42%;
-    }
-  
-    /*Page menu*/
-    #menus {
-      width: 50%;
-      margin: auto;
-      padding: 30px 0 30px 0;
-    }
-    #menus h1 {
-      font-size: 26px;
-    }
-  
-    /*prochainement*/
-    #prochainement {
-      width: 30%;
-      margin-top: 30px;
-    }
 
-  
-    /*footer*/
-    footer {
-      width: 99%;
-    }
+  /*menus*/
+  #container_menus {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
   }
+
+  #container_menus figure {
+    width: 42%;
+  }
+
+  /*Page menu*/
+  #menus {
+    width: 50%;
+    margin: auto;
+    padding: 30px 0 30px 0;
+  }
+
+  #menus h1 {
+    font-size: 26px;
+  }
+
+  /*prochainement*/
+  #prochainement {
+    width: 30%;
+    margin-top: 30px;
+  }
+
+
+  /*footer*/
+  footer {
+    width: 99%;
+  }
+}
+

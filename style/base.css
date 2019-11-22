@@ -1,33 +1,56 @@
 /* CSS 4 menus + ML */
 
-
-body#note {
-
-    background-color: #fcdfdb;
-}
-
-body#chic {
-    background-color: #fff5fe;
-}
-
-body#delice {
+#container_delice {
+    margin: 125px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0px 0px 10px #b7b7b7;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #edefef;
 }
 
-body#palette {
+#container_chic {
+    margin: 125px;
+    padding: 20px;
+    width: 85%;
+    box-shadow: 0px 0px 10px #b7b7b7;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff5fe;
+}
+
+#container_palette {
+    margin: 125px;
+    padding: 20px;
+    width: 85%;
+    box-shadow: 0px 0px 10px #b7b7b7;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #fdfffd;
 }
 
-p
-{
-    text-align: center;
-    color: black;    
+#container_note {
+    margin: 125px;
+    padding: 20px;
+    width: 85%;
+    box-shadow: 0px 0px 10px #b7b7b7;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fcdfdb;
 }
+
+p {
+    text-align: center;
+    color: black;
+}
+
 
 main p {
     text-align: left;
     margin-left: 20px;
 }
+
 h1#cgv {
     text-align: center;
 }
@@ -35,24 +58,126 @@ h1#cgv {
 
 h2 {
     text-align: center;
+    font-size: 62px;
+}
+
+h2#menu_palette {
+    font-size: 62px;
+    background: linear-gradient( #41963c,#8ad363,#beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+h2#menu_delice {
+    font-size: 62px;
+    background: linear-gradient(#0228dd,#0670f3,#229df9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+h2#menu_chic {
+
+    font-size: 62px;
+    background: linear-gradient(300deg, #d4813c 0%,#b06da1 50%,#8f5bfe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h3 {
-
- text-align: center;
-    }
-
+    text-align: center;
+}
 
 li {
     list-style-type: none;
-
-
 }
+
 /*barres*/
 img {
-    width: 300px;
+    width: 280px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
+/*Menu Chic */
+section#entree_chic {
+    color: #c67412;
+    padding-bottom: 10px;
+}
+
+.container_list_chicentree {
+    color: #c67412;
+
+}
+
+.container_list_chicentree {
+    display: flex;
+    width: 67%;
+}
+
+.container_list_chicentree .menu {
+    width: 80%;
+    text-align: left;
+    padding-left: 32%;
+}
+
+.container_list_chicentree .price {
+    width: 20%;
+    text-align: right;
+   
+}
+
+section#plat_chic {
+    color: #a56799;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container_list_chicplat {
+    color: #a56799;
+}
+
+.container_list_chicplat {
+    display: flex;
+    width: 67%;
+}
+
+.container_list_chicplat .menu {
+    width: 80%;
+    text-align: left;
+    padding-left: 32%;
+}
+
+.container_list_chicplat .price {
+    width: 20%;
+    text-align: right;   
+}
+
+section#dessert_chic {
+    color: #6e4ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container_list_chicdessert {
+    color: #6e4ccc;
+}
+
+.container_list_chicdessert {
+    display: flex;
+    width: 67%;
+}
+
+.container_list_chicdessert .menu {
+    width: 80%;
+    text-align: left;
+    padding-left: 32%;
+}
+
+.container_list_chicdessert .price {
+    width: 20%;
+    text-align: right;   
+}
 
 .container_list {
     display: flex;
@@ -60,15 +185,29 @@ img {
 
 }
 
+/*menu la note*/
+#cle_note img {
+width: 50px;
+}
+
+#cle_note {
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/*menus en général*/
 .container_list .menu {
 
     width: 80%;
     text-align: left;
-    padding-left: 40%;
+    padding-left: 30%;
+    padding-bottom: 10px;
 }
 
 .container_list .price {
     width: 20%;
     text-align: right;
+    padding-bottom: 10px;
 }
 
