@@ -156,10 +156,10 @@ li {
 }
 
 /*barres*/
-img {
-    width: 250px;
-    padding-right: 10px;
-    padding-left: 10px;
+#barre {
+    width: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 /*Menu Chic */
@@ -263,7 +263,18 @@ section#dessert_chic {
     padding-bottom: 10px;
 }
 
+/*mentions légales*/
+#mentions_legales { 
+width: 85%;
+margin: auto;
+text-align: justify;
 
+ }
+
+.titre_article {
+    font-size: 25px;
+    text-align: left;
+}
 
 /* MEDIA QUERIES */
 /* format mobile large*/
@@ -373,3 +384,5 @@ section#dessert_chic {
 
     }
 }
+
+/* fichier CSS validé W3C: https://jigsaw.w3.org/css-validator/ */
