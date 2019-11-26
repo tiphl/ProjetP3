@@ -1,43 +1,49 @@
 /* CSS 4 menus + ML */
 
+
 #container_delice {
-    margin: 125px;
-    padding: 20px;
+    margin: 20px;
+    padding: 10px;
     width: 80%;
     box-shadow: 0px 0px 10px #b7b7b7;
     margin-left: auto;
     margin-right: auto;
     background-color: #edefef;
+    font-size: 16px;
 }
 
 #container_chic {
-    margin: 125px;
-    padding: 20px;
-    width: 85%;
+    margin: 20px;
+    padding: 10px;
+    width: 80%;
     box-shadow: 0px 0px 10px #b7b7b7;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff5fe;
+    font-size: 16px;
+
 }
 
 #container_palette {
-    margin: 125px;
-    padding: 20px;
-    width: 85%;
+    margin: 20px;
+    padding: 10px;
+    width: 80%;
     box-shadow: 0px 0px 10px #b7b7b7;
     margin-left: auto;
     margin-right: auto;
     background-color: #fdfffd;
+    font-size: 16px;
 }
 
 #container_note {
-    margin: 125px;
-    padding: 20px;
-    width: 85%;
+    margin: 20px;
+    padding: 10px;
+    width: 80%;
     box-shadow: 0px 0px 10px #b7b7b7;
     margin-left: auto;
     margin-right: auto;
     background-color: #fcdfdb;
+    font-size: 16px;
 }
 
 p {
@@ -58,30 +64,83 @@ h1#cgv {
 
 h2 {
     text-align: center;
-    font-size: 62px;
+    font-size: 60px;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: "Segoe Print V1";
+    src: url("font/segoe/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot");
+    /* IE9*/
+    src: url("font/segoe/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"),
+        /* chrome、firefox */
+        url("font/segoe/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"),
+        /* chrome、firefox */
+        url("font/segoe/c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url("font/segoe/c455d94eee43dc4ceeb83c0c0fd0d4c8.svg#Segoe Print V1") format("svg");
+    /* iOS 4.1- */
 }
 
 h2#menu_palette {
-    font-size: 62px;
-    background: linear-gradient( #41963c,#8ad363,#beff7f);
+    font-size: 60px;
+    font-family: 'Kaushan Script', cursive;
+    background: linear-gradient(-300deg, #41963c 35%, #8ad363 45%, #beff7f 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 
 h2#menu_delice {
-    font-size: 62px;
-    background: linear-gradient(#0228dd,#0670f3,#229df9);
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(-300deg, #0228dd 25%, #0670f3 45%, #229df9 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-    
+
 h2#menu_chic {
 
-    font-size: 62px;
-    background: linear-gradient(300deg, #d4813c 0%,#b06da1 50%,#8f5bfe 100%);
+    font-size: 50px;
+    font-family: 'Croissant One', cursive;
+    background: linear-gradient(-300deg, #d4813c 25%, #ad6bac 45%, #8f5aff 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+h2#note_enchantée {
+    font-size: 50px;
+    font-family: 'Devonshire', cursive;
+    font-weight: normal;
+}
+
+#entree_note,
+#plat_note,
+#dessert_note {
+    font-family: 'Segoe Print V1';
+}
+
+#cle_note {
+    font-family: 'Devonshire', cursive;
+    font-weight: normal;
+}
+
+#entree_chic,
+#plat_chic,
+#dessert_chic {
+    font-family: 'Noto Serif', serif;
+}
+
+#entree_palette,
+#plat_palette,
+#dessert_palette {
+    font-family: 'Architects Daughter', cursive;
+}
+
+#entree_delice,
+#plat_delice,
+#dessert_delice {
+    font-family: 'Aref Ruqaa', serif;
 }
 
 h3 {
@@ -92,9 +151,13 @@ li {
     list-style-type: none;
 }
 
+#note_image {
+    width: auto;
+}
+
 /*barres*/
 img {
-    width: 280px;
+    width: 250px;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -107,50 +170,42 @@ section#entree_chic {
 
 .container_list_chicentree {
     color: #c67412;
-
-}
-
-.container_list_chicentree {
     display: flex;
-    width: 67%;
+    width: 70%;
 }
 
 .container_list_chicentree .menu {
     width: 80%;
     text-align: left;
-    padding-left: 32%;
+
 }
 
 .container_list_chicentree .price {
     width: 20%;
     text-align: right;
-   
+
 }
 
 section#plat_chic {
     color: #a56799;
-    padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .container_list_chicplat {
     color: #a56799;
-}
-
-.container_list_chicplat {
     display: flex;
-    width: 67%;
+    width: 70%;
 }
 
 .container_list_chicplat .menu {
     width: 80%;
     text-align: left;
-    padding-left: 32%;
+
 }
 
 .container_list_chicplat .price {
     width: 20%;
-    text-align: right;   
+    text-align: right;
 }
 
 section#dessert_chic {
@@ -161,33 +216,30 @@ section#dessert_chic {
 
 .container_list_chicdessert {
     color: #6e4ccc;
-}
-
-.container_list_chicdessert {
     display: flex;
-    width: 67%;
+    width: 70%;
 }
 
 .container_list_chicdessert .menu {
     width: 80%;
     text-align: left;
-    padding-left: 32%;
+
 }
 
 .container_list_chicdessert .price {
     width: 20%;
-    text-align: right;   
+    text-align: right;
 }
 
-.container_list {
-    display: flex;
-    width: 67%;
-
-}
 
 /*menu la note*/
+.container_list {
+    display: flex;
+    width: 70%;
+}
+
 #cle_note img {
-width: 50px;
+    width: 40px;
 }
 
 #cle_note {
@@ -201,13 +253,123 @@ width: 50px;
 
     width: 80%;
     text-align: left;
-    padding-left: 30%;
     padding-bottom: 10px;
 }
 
 .container_list .price {
     width: 20%;
     text-align: right;
+    padding-left: 25%;
     padding-bottom: 10px;
 }
 
+
+
+/* MEDIA QUERIES */
+/* format mobile large*/
+@media screen and (min-width: 425px) {
+
+    /*barres*/
+    img {
+        width: 260px;
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+
+}
+
+/*		format tablette		*/
+@media screen and (min-width: 768px) {
+
+    header {
+        margin-bottom: 40px;
+    }
+
+    .barre {
+        width: 115px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    img {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /*menus en général*/
+    .container_list .menu {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*menu note*/
+    #entree_note,
+    #plat_note,
+    #dessert_note,
+    .menu {
+        padding-left: 35px;
+    }
+
+}
+
+/*		Format desktop		*/
+@media screen and (min-width: 1024px) {
+    .barre {
+        width: 120px;
+
+    }
+
+    /*menus en général*/
+    .container_list .menu {
+
+        width: 80%;
+        padding-left: 15%;
+
+    }
+
+
+    /*Menu Chic */
+
+    .container_list_chicentree .menu {
+
+        padding-left: 15%;
+    }
+
+    .container_list_chicplat .menu {
+
+        padding-left: 15%;
+
+    }
+
+    .container_list_chicdessert .menu {
+
+        padding-left: 15%;
+    }
+
+    #container_delice {
+
+        width: 60%;
+
+    }
+
+    #container_chic {
+
+        width: 60%;
+
+
+    }
+
+    #container_palette {
+
+        width: 60%;
+
+    }
+
+    #container_note {
+
+        width: 60%;
+
+    }
+}
