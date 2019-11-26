@@ -2,33 +2,30 @@
 /*animation 3pts */
 @keyframes blink {
 
-  /**
-   * Au début de l'animation le point
-   * a une opacité de .2
-   */
+  /** Au début de l'animation le point a une opacité de .2.
+   A 20% le point est entièrement visible et
+   puis disparaît lentement
+   Jusqu'à ce qu'il atteigne une opacité de .2 et
+   l'animation peut recommencer **/
+
   0% {
     opacity: .2;
   }
 
-  /**
-   * A 20% le point est entièrement visible et
-   * puis disparaît lentement
-   */
   20% {
     opacity: 1;
   }
 
-  /**
-   * Jusqu'à ce qu'il atteigne une opacité de .2 et
-   * l'animation peut recommencer
-   */
   100% {
     opacity: .2;
   }
-}
+ }
 
-h2 span {
+h2 span {  
+  -webkit-animation-name: blink;
+  -moz-animation-name: blink;
   animation-name: blink;
+
   /* L'animation devrait prendre 1,4 seconde*/
   animation-duration: 1.4s;
   /* Se répète à l'infini*/
@@ -142,6 +139,7 @@ header {
 
 #logo h1 {
   display: none;
+  width: 70%;
 }
 
 
@@ -216,7 +214,7 @@ footer {
   }
 
   #logo h1 {
-    width: 80%;
+    width: 200px;
     display: none;
 
   }
@@ -246,7 +244,7 @@ footer {
 }
 
 /*		Format desktop		*/
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
 
   /*général*/
   body {
@@ -257,10 +255,6 @@ footer {
   header {
     text-align: center;
     margin-bottom: 50px;
-  }
-
-  #logo img {
-    width: auto;
   }
 
   /*menus*/
@@ -300,3 +294,5 @@ footer {
     width: 99%;
   }
 }
+
+/* fichier CSS validé W3C: https://jigsaw.w3.org/css-validator/ */
