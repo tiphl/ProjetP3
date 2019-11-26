@@ -1,47 +1,3 @@
-/*Fonts*/
-
-@font-face {
-  font-family: 'qikki_regregular';
-  src: url('font/Qarmic_sans_Abridged-webfont.eot');
-  src: url('font/Qarmic_sans_Abridged-webfont.eot?#iefix') format('embedded-opentype'),
-    url('font/Qarmic_sans_Abridged-webfont.woff2') format('woff2'),
-    url('font/Qarmic_sans_Abridged-webfont.woff') format('woff'),
-    url('font/Qarmic_sans_Abridged-webfont.ttf') format('truetype'),
-    url('fontQarmic_sans_Abridged-webfont.svg#qikki_regregular') format('svg');
-}
-
-@font-face {
-  font-family: "Segoe_Print";
-  src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot");
-  src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot?#iefix") format("embedded-opentype"), 
-  url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"), 
-  url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"), 
-  url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype"), 
-  url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.svg#Segoe Print") format("svg");
-}
-
-@font-face {
-  font-family: 'Croissant_one';
-  src: url('font/CroissantOne-regular.ttf') format("truetype");
-}
-
-@font-face {
-  font-family: 'Dancing_script';
-  src: url("font/DancingScript-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'kaushan_script';
-src: url("font/KaushanScript-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'noto_serif';
-  src: url("font/NotoSerif-Regular.ttf") format("truetype");
-}
-
-
-
 /* Animations */
 /*animation 3pts */
 @keyframes blink {
@@ -157,7 +113,7 @@ figure.index:hover {
 body {
   width: 100%;
   margin: 0;
-  font-family: "qikki_regregular", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 
 }
@@ -206,7 +162,7 @@ figure.index img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 80%;
   height: 50px;
   margin: auto;
   padding: 0;
@@ -227,9 +183,13 @@ figure.index img {
 
 footer {
   width: 100%;
+  margin-top: 30px;
+  padding: 10px 0 10px 0;
   background-color: #579c87;
   line-height: 45px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 
@@ -255,9 +215,10 @@ footer {
     top: 130px;
   }
 
-  #logo {
+  #logo h1 {
     width: 80%;
-  
+    display: none;
+
   }
 
   /*menus*/
@@ -267,7 +228,10 @@ footer {
 
   /*prochainement*/
   #prochainement {
-    height: 60px;
+    width: 40%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 25px;
   }
 
   /*footer*/
@@ -292,6 +256,7 @@ footer {
   /*header*/
   header {
     text-align: center;
+    margin-bottom: 50px;
   }
 
   #logo img {
@@ -301,7 +266,7 @@ footer {
   /*menus*/
   #container_menus {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 75%;
     margin: auto;
@@ -326,6 +291,7 @@ footer {
   #prochainement {
     width: 30%;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 
 
@@ -334,4 +300,3 @@ footer {
     width: 99%;
   }
 }
-
